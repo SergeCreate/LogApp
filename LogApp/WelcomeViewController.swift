@@ -10,21 +10,13 @@ import UIKit
 class WelcomeViewController: UIViewController {
     
     @IBOutlet weak var usernameLabel: UILabel!
-    @IBOutlet weak var logOutButton: UIButton!
     
-    var username: String?
+    var user = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        usernameLabel.text = "Welcome, \(username ?? "")"
-    }
-    
-    @IBAction func logOutButtonTapped(_ sender: UIButton) {
-        if let loginVC = presentingViewController as? LoginViewController {
-            loginVC.usernameTextField.text = nil
-            loginVC.passwordTextField.text = nil
-        }
-        dismiss(animated: true, completion: nil)
+        usernameLabel.text = "Welcome, \(user)"
     }
 }
+
 
