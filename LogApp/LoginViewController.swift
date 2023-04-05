@@ -15,6 +15,11 @@ final class LoginViewController: UIViewController {
     private let user = "Sergey"
     private let password = "Zakharov"
     
+    override func viewDidLoad() {
+        usernameTextField.text = user
+        passwordTextField.text = password
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let welcomeVC = segue.destination as? WelcomeViewController else { return }
         welcomeVC.user = user
