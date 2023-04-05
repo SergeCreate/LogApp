@@ -94,12 +94,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="itp-Fn-qNX">
-                                <rect key="frame" x="87.5" y="80" width="145" height="31.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fUW-yQ-hA7">
                                 <rect key="frame" x="117.5" y="346" width="85" height="44"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
@@ -110,18 +104,21 @@
                                     <segue destination="Bb9-AI-XCg" kind="unwind" unwindAction="unwindFor:" id="xDL-l2-5L8"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="itp-Fn-qNX">
+                                <rect key="frame" x="131" y="74" width="58" height="32"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="iRJ-Ld-ldJ"/>
                         <color key="backgroundColor" systemColor="systemTealColor"/>
                         <color key="tintColor" systemColor="systemCyanColor"/>
                         <constraints>
-                            <constraint firstItem="iRJ-Ld-ldJ" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="fUW-yQ-hA7" secondAttribute="trailing" id="DTi-ax-GV1"/>
-                            <constraint firstItem="iRJ-Ld-ldJ" firstAttribute="bottom" secondItem="fUW-yQ-hA7" secondAttribute="bottom" constant="178" id="HZ3-mg-TEW"/>
-                            <constraint firstItem="fUW-yQ-hA7" firstAttribute="centerX" secondItem="sJ4-75-UXR" secondAttribute="centerX" id="MwK-al-v2P"/>
-                            <constraint firstItem="itp-Fn-qNX" firstAttribute="centerX" secondItem="fUW-yQ-hA7" secondAttribute="centerX" id="UAd-TN-nUh"/>
-                            <constraint firstItem="itp-Fn-qNX" firstAttribute="top" secondItem="iRJ-Ld-ldJ" secondAttribute="top" constant="80" id="byI-AS-vOu"/>
-                            <constraint firstItem="itp-Fn-qNX" firstAttribute="width" secondItem="sJ4-75-UXR" secondAttribute="width" multiplier="0.453125" id="t8L-6W-doY"/>
-                            <constraint firstItem="fUW-yQ-hA7" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="iRJ-Ld-ldJ" secondAttribute="leading" id="xAU-Xz-T1I"/>
+                            <constraint firstItem="fUW-yQ-hA7" firstAttribute="centerX" secondItem="sJ4-75-UXR" secondAttribute="centerX" id="2Gu-0M-BSw"/>
+                            <constraint firstItem="itp-Fn-qNX" firstAttribute="centerX" secondItem="sJ4-75-UXR" secondAttribute="centerX" id="bFX-ER-Kbr"/>
+                            <constraint firstItem="iRJ-Ld-ldJ" firstAttribute="bottom" secondItem="itp-Fn-qNX" secondAttribute="bottom" constant="462" id="eyH-DO-scw"/>
+                            <constraint firstItem="iRJ-Ld-ldJ" firstAttribute="bottom" secondItem="fUW-yQ-hA7" secondAttribute="bottom" constant="178" id="pnj-3S-AwE"/>
                         </constraints>
                     </view>
                     <connections>
@@ -131,7 +128,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gGh-5i-syv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="Bb9-AI-XCg" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="716" y="-12"/>
+            <point key="canvasLocation" x="714.375" y="-12.67605633802817"/>
         </scene>
     </scenes>
     <resources>
